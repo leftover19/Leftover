@@ -1,81 +1,50 @@
-# Turborepo starter
-
-This is an official starter Turborepo.
-
-## Using this example
-
-Run the following command:
-
-```sh
-npx create-turbo@latest
-```
-
-## What's inside?
-
-This Turborepo includes the following packages/apps:
-
-### Apps and Packages
-
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
-
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm build
-```
-
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm dev
-```
-
-### Remote Caching
-
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+{
+	"nodes":[
+		{"id":"8bcacf2d9283b826","type":"text","text":"# Scaleable Chat Application","x":-420,"y":-438,"width":330,"height":118,"color":"4"},
+		{"id":"bb002af82ad84c65","type":"text","text":"Tech Stack","x":38,"y":-200,"width":330,"height":60,"color":"2"},
+		{"id":"5dc4192a59435bce","type":"text","text":"TurboRepo","x":640,"y":-520,"width":250,"height":60,"color":"#e30d6a"},
+		{"id":"b31e6d99eaafee09","type":"text","text":"Redis","x":640,"y":-320,"width":250,"height":60,"color":"1"},
+		{"id":"7fadb550229d9f62","type":"text","text":"NextJS","x":640,"y":-140,"width":250,"height":60,"color":"#000000"},
+		{"id":"74a05170b2ada7d9","type":"text","text":"NodeJS","x":640,"y":20,"width":250,"height":60,"color":"#08e20c"},
+		{"id":"e9dc179c932c4c62","type":"text","text":"user 3","x":-1126,"y":463,"width":125,"height":50,"color":"3"},
+		{"id":"a00a195a112abc20","type":"text","text":"All users must receive same message, but assigned different servers.","x":-1119,"y":806,"width":319,"height":94,"color":"4"},
+		{"id":"fe3a372d9a011a46","type":"text","text":"### Redis","x":-1088,"y":-140,"width":174,"height":70,"color":"1"},
+		{"id":"63fc6dcbdee1ad34","type":"text","text":"user 1","x":-1596,"y":463,"width":140,"height":50,"color":"3"},
+		{"id":"4c00558b54d2a5ee","type":"text","text":"user 2","x":-1398,"y":463,"width":135,"height":50,"color":"3"},
+		{"id":"19cabfc23ef50a27","type":"text","text":"Server 1 (socket.io)","x":-1456,"y":136,"width":250,"height":70,"color":"#eb0fb0"},
+		{"id":"6c87936af88ea019","type":"text","text":"user 4","x":-737,"y":463,"width":125,"height":50,"color":"3"},
+		{"id":"ee78439ce1ccd65c","type":"text","text":"Server 2 (socket.io)","x":-800,"y":136,"width":250,"height":70,"color":"#452dfb"},
+		{"id":"58a4087d54fd7764","type":"text","text":"Distributes the message","x":-1088,"y":-230,"width":174,"height":60,"color":"1"},
+		{"id":"bb3beabdb81adbc3","type":"text","text":"Pull the message  \nFrom Redis -> servers SUB","x":-1161,"y":80,"width":320,"height":56,"color":"4"},
+		{"id":"9eada9d29ab080ef","type":"text","text":"## Architecture ","x":-1126,"y":-580,"width":250,"height":60,"color":"5"},
+		{"id":"0c666c615fe2d10a","type":"text","text":"Emir Message : hello","x":-1900,"y":340,"width":250,"height":60,"color":"6"},
+		{"id":"415522ac239e4f77","type":"text","text":"PUB SUB\nArchitecture of REDIS","x":-637,"y":-140,"width":217,"height":100,"color":"1"},
+		{"id":"5172b391620419f7","type":"text","text":"","x":-340,"y":756,"width":50,"height":50,"color":"1"},
+		{"id":"fd40b371b8429a0b","type":"text","text":"","x":-340,"y":256,"width":50,"height":50,"color":"1"}
+	],
+	"edges":[
+		{"id":"aeb826f4229b85ca","fromNode":"8bcacf2d9283b826","fromSide":"bottom","toNode":"bb002af82ad84c65","toSide":"top","color":"4"},
+		{"id":"e9f9060120e9afcb","fromNode":"bb002af82ad84c65","fromSide":"right","toNode":"5dc4192a59435bce","toSide":"left","color":"4"},
+		{"id":"fe11d30c0ba4dfa8","fromNode":"bb002af82ad84c65","fromSide":"right","toNode":"b31e6d99eaafee09","toSide":"left","color":"4"},
+		{"id":"5d5906b3e3beedd7","fromNode":"bb002af82ad84c65","fromSide":"right","toNode":"7fadb550229d9f62","toSide":"left","color":"4"},
+		{"id":"519a504d2293ec02","fromNode":"bb002af82ad84c65","fromSide":"right","toNode":"74a05170b2ada7d9","toSide":"left","color":"4"},
+		{"id":"f372e1eece15e47f","fromNode":"8bcacf2d9283b826","fromSide":"left","toNode":"9eada9d29ab080ef","toSide":"right","color":"5"},
+		{"id":"fdddba231c58173d","fromNode":"63fc6dcbdee1ad34","fromSide":"top","toNode":"19cabfc23ef50a27","toSide":"bottom","fromEnd":"arrow","color":"6"},
+		{"id":"8f07ce8d8ec333f7","fromNode":"4c00558b54d2a5ee","fromSide":"top","toNode":"19cabfc23ef50a27","toSide":"bottom","fromEnd":"arrow","color":"6"},
+		{"id":"844993d9f89b69a4","fromNode":"e9dc179c932c4c62","fromSide":"top","toNode":"19cabfc23ef50a27","toSide":"bottom","fromEnd":"arrow","color":"6"},
+		{"id":"6bd1bbf1af0148de","fromNode":"6c87936af88ea019","fromSide":"top","toNode":"ee78439ce1ccd65c","toSide":"bottom","fromEnd":"arrow","color":"6"},
+		{"id":"d674d5efea8979cf","fromNode":"ee78439ce1ccd65c","fromSide":"top","toNode":"fe3a372d9a011a46","toSide":"bottom","color":"#2f1ad1"},
+		{"id":"fc9d5017c118fa8f","fromNode":"19cabfc23ef50a27","fromSide":"top","toNode":"fe3a372d9a011a46","toSide":"bottom","color":"#fd1cd3"},
+		{"id":"132ecb1dd3595f4a","fromNode":"63fc6dcbdee1ad34","fromSide":"bottom","toNode":"a00a195a112abc20","toSide":"top","color":"2"},
+		{"id":"ea0557dc96827600","fromNode":"4c00558b54d2a5ee","fromSide":"bottom","toNode":"a00a195a112abc20","toSide":"top","color":"2"},
+		{"id":"bb847664adf46de8","fromNode":"e9dc179c932c4c62","fromSide":"bottom","toNode":"a00a195a112abc20","toSide":"top","color":"2"},
+		{"id":"b35ccf7e837710c1","fromNode":"6c87936af88ea019","fromSide":"bottom","toNode":"a00a195a112abc20","toSide":"top","color":"2"},
+		{"id":"10b5fb862aa40be6","fromNode":"63fc6dcbdee1ad34","fromSide":"left","toNode":"0c666c615fe2d10a","toSide":"bottom","color":"1","label":"start here"},
+		{"id":"96db5c862bf5a4e9","fromNode":"0c666c615fe2d10a","fromSide":"top","toNode":"19cabfc23ef50a27","toSide":"left","color":"6","label":"Goes to server 1"},
+		{"id":"e35eb80b7c276ec9","fromNode":"19cabfc23ef50a27","fromSide":"left","toNode":"fe3a372d9a011a46","toSide":"left","color":"6","label":"Goes to redis / PUB"},
+		{"id":"0f79e2f17c8348c1","fromNode":"fe3a372d9a011a46","fromSide":"top","toNode":"19cabfc23ef50a27","toSide":"right","color":"4"},
+		{"id":"88168272d36ce3b1","fromNode":"fe3a372d9a011a46","fromSide":"top","toNode":"ee78439ce1ccd65c","toSide":"left","color":"4"},
+		{"id":"40faef80f563a40e","fromNode":"9eada9d29ab080ef","fromSide":"bottom","toNode":"58a4087d54fd7764","toSide":"top","color":"5"},
+		{"id":"14fe69dad95323c9","fromNode":"fd40b371b8429a0b","fromSide":"bottom","toNode":"5172b391620419f7","toSide":"top","fromEnd":"arrow","color":"1"}
+	]
+}
