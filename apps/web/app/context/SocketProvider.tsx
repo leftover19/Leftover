@@ -2,6 +2,7 @@
 import React, { useCallback, useContext, useEffect, useState } from "react";
 import { io, Socket } from "socket.io-client";
 
+const serverURL = "http://localhost:8000"
 interface SocketProviderProps {
     children?: React.ReactNode;
 }
@@ -42,7 +43,7 @@ export const SocketProvider: React.FC<SocketProviderProps> = ({ children }) => {
     }, []);
 
     useEffect(() => {
-        const _socket = io("http://localhost:8000");
+        const _socket = io(serverURL);
         _socket.on("message", onMessageRec);
 
         setSocket(_socket);
