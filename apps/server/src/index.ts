@@ -8,7 +8,7 @@ async function init() {
 
     httpServer.on('request', (req, res) => {
         // Allow requests only from the specified origin
-        res.setHeader('Access-Control-Allow-Origin', 'https://chatappserver-6y2lnjy60-leftovers-projects.vercel.app');
+        res.setHeader('Access-Control-Allow-Origin', '*');
 
         if (req.method === 'OPTIONS') {
             res.writeHead(200);
