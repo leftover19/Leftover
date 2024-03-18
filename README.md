@@ -89,7 +89,7 @@ For Kafka : place it's ca.pem certificate in server directory.
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://github.com/leftover19/Leftover/blob/main/LICENSE)
 
 
 ## Lessons Learned
