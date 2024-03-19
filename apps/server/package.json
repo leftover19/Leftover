@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "private": "true",
     "scripts": {
-        "start": "node dist/index.js --cors",
+        "start": "node dist/index.js",
         "dev": "tsc-watch --onSuccess \"node dist/index.js\" ",
         "build": "tsc -p ."
     },
