@@ -2,7 +2,7 @@
 import React, { useCallback, useContext, useEffect, useState } from "react";
 import { io, Socket } from "socket.io-client";
 
-const serverURL = "https://chatappserver-6y2lnjy60-leftovers-projects.vercel.app"
+const serverURL = "https://chatserver.leftover.life"
 interface SocketProviderProps {
     children?: React.ReactNode;
 }
